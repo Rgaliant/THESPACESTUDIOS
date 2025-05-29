@@ -1,0 +1,177 @@
+/* Overall Page Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1f1f1f; /* Slightly lighter dark shade for header */
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid #333; /* Subtle border */
+}
+
+.logo h1 {
+    margin: 0;
+    color: #00aaff; /* Accent color for logo */
+    font-size: 2em;
+}
+
+.logo img { /* Style for the actual logo image */
+    max-height: 70px; /* Increased logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00aaff; /* Accent color for nav links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* White on hover for better visibility */
+}
+
+/* Main Content & Hero Section */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center; /* Center content within main by default */
+}
+
+.hero {
+    background-color: #2a2a2a; /* Darker shade for hero section background */
+    padding: 60px 20px;
+    margin-bottom: 30px; /* Space below hero */
+    border-radius: 8px; /* Rounded corners for the hero section */
+}
+
+.hero h2 {
+    color: #00aaff; /* Accent color for hero title */
+    font-size: 3.5em; /* Increased hero title size */
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5em; /* Increased hero subtitle size */
+    color: #c0c0c0; /* Slightly lighter text for hero paragraph */
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.content {
+    text-align: left; /* Align text to the left for general content */
+    padding: 0 20px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between images */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.image-gallery img {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Max width of each image */
+    height: auto;
+    border-radius: 4px; /* Slightly rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #1f1f1f; /* Similar to header/footer for consistency */
+    border-radius: 8px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Fixed width for each feature item */
+    margin: 10px;
+    padding: 10px;
+}
+
+.feature-icon {
+    font-size: 2em; /* Placeholder icon size */
+    color: #00aaff; /* Accent color for icon */
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+/* Booking Page Specific Styles */
+.booking-content {
+    padding: 20px;
+    text-align: center; /* Center the heading and intro paragraph */
+}
+
+.booking-content h2 {
+    font-size: 2.5em;
+    color: #00aaff; /* Accent color for heading */
+    margin-bottom: 20px;
+}
+
+.booking-content p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.iframe-container {
+    width: 100%;
+    max-width: 960px; /* Max width for the iframe container */
+    margin: 0 auto; /* Center the iframe container */
+    border: 1px solid #333; /* Optional border around iframe */
+    border-radius: 8px; /* Optional rounded corners */
+    overflow: hidden; /* Ensures iframe respects border-radius */
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f; /* Same as header for consistency */
+    color: #aaa; /* Lighter grey for footer text */
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333; /* Subtle border */
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase;
+}
